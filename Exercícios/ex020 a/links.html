@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = children
+        */
+
+
+        body{
+           font-family: Arial, Helvetica, sans-serif; 
+        }
+        
+        a{
+            color:rgb(201, 97, 201);
+            text-decoration: none;/* Tira o sublinhado do link*/
+            font-weight: bold;
+        }/* Configuração genérica do link*/
+        
+        a:visited{
+            color: rgb(53, 15, 53)
+        }/* Para saber se o site foi visitado*/
+
+        a:hover{
+            color:black;
+            text-decoration: underline;
+            }/* Aqui ele fica preto e sublinhado*/
+        
+        a:active{
+            color:rgb(10, 126, 35);
+        }/* vai ficar verde quando estiver ativo, um link ativo é um link que foi clicado*/
+
+        .especial{
+            background-color: rgb(135, 179, 153);
+            
+        }
+
+        .especial::before{
+            content: '⇨';
+        } /* colocando símbolos*/
+
+        .especial:after{
+            content: '⇦';
+            /*text-decoration: none;
+            font-weight: normal;
+            color:black;*/
+        }
+
+
+
+        /* Depois de todos os links coloquei um content que siginifica conteúdo, ou seja, depois de todos os links vou avisar que é um link*/
+
+        /*
+        Posso colocar uma classe em um link específico, determinando que somente essa classe terá algo de diferente.
+        
+        Por exemplo, coloco só o canal do youtube como importante, no link do youtube eu crio uma class='especial'.Todo link da classe especial será formatado diferente.
+        
+        */
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="http://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class='especial'>Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

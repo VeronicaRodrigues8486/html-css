@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: rgb(243, 10, 134);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase tem um <strong>termo em semântica</strong> que da um sentido!</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p> <!-- escrever uma frase sem o paragrafo e selecionar a frase toda + CTRL + SHIFT + P + wrap with abbreviation + p + enter = coloca parágrafo na frase-->
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK. </p>
+    <p>Podemos mudar a cor em <mark style="background-color: rgb(181, 124, 209);">um texto marcado</mark> <!--somente com css (mark <style="background-color:"). </p>--> 
+    
+    <P>Se eu tiver 200 mark( textos marcados) dentro de um unico texto para modificar a cor de todos é preciso que eu crie abaixo de title no cabeçalho uma tag style fazendo um seletor para mark que vai ter p background-color colcoando a cor desejada.></P><!-- <style>
+        mark {
+            background-color: rgb(243, 10, 134);
+        }
+    </style>-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> nesse parágrafo.</p>
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido mas não considerado.</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar enfase e indicar que ele foi adicicionado depois.</p> 
+    <p>Existe também o sublinhado com a tag u (não semantica)</p><!-- não recomendado-->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p> <!-- X elevado a vinte + 3-->
+    <h2>Texto subsescrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p> <!--H2o-->
+
+</body>
+</html>

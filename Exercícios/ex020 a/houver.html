@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Houver</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }/* Para esconder o texto, não acontecerá nada*/
+
+        div:hover > p {
+            display:block;
+            color: white;
+            background-color: rgb(255, 115, 0);
+        
+
+        } /* Quando passar o mouse em cima do texto ele aparecerá*/
+        /* quando eu passar o mouse por cima a letra ficará branca e o texto vermelho */
+
+        div:hover{
+            color: rgb(255, 115, 0);
+        }
+
+        p#d1{
+            color: white;
+            background-color: red;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+    <p>Passe o mouse sobre o texto a abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p id="d1">Fim do exercicio!</p>
+</body>
+</html>
