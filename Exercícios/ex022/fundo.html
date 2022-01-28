@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+
+        div.quadrado{
+            display:inline-block;
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+        div#q1{
+            background-color: skyblue;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, rgb(61, 3, 63), rgb(9, 145, 54));
+        }
+
+        div#q3{
+            background-image: url('imagens/pattern003.png');
+        }
+        /* Primeiro criei as divs, após isso criei em style a div.quadrado colocando as configurações necessárias, após isso coloquei id nas divs em body. Assim pude chamar cada div pelo id. Colocando as imagens dentro de cada uma. Por fim chamei o body em style e coloquei uma imagem de fundo tbm.  */
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
